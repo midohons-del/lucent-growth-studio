@@ -1,0 +1,1189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Search Engine Optimization — Lucent Growth Studio</title>
+  <meta name="description" content="Technical fixes and topical authority that move rankings that actually convert. Run in-house by Lucent Growth Studio, not outsourced." />
+  <link rel="canonical" href="https://lucent-growth-studio.com/services/seo/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Search Engine Optimization — Lucent Growth Studio" />
+  <meta property="og:description" content="Technical fixes and topical authority that move rankings that actually convert. Run in-house by Lucent Growth Studio, not outsourced." />
+  <meta property="og:url" content="https://lucent-growth-studio.com/services/seo/" />
+  <meta property="og:site_name" content="Lucent Growth Studio" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Search Engine Optimization — Lucent Growth Studio" />
+  <meta name="twitter:description" content="Technical fixes and topical authority that move rankings that actually convert. Run in-house by Lucent Growth Studio, not outsourced." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700&family=Barlow:wght@400;500;600&display=swap" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Lucent Growth Studio","legalName":"BONNIE J CHRISTENSEN LLC","url":"https://lucent-growth-studio.com/","email":"agency@bonniejchristensen-marketing.com","telephone":"+1 (323) 418-2760","description":"Lucent Growth Studio is a full-service marketing agency for Fintech, B2B SaaS, Financial Services, and Hospitality & Travel companies — 7 core services, 3 documented case studies, one senior team with no junior handoffs.","address":{"@type":"PostalAddress","streetAddress":"6900 Seville Ave, Huntington Park, CA 90255-4970","addressRegion":"CA","addressCountry":"US"},"identifier":{"@type":"PropertyValue","name":"CA LLC File No.","value":"202253412781"}}</script>
+  <style>
+    :root {
+      --bg: #F8F6F2;
+      --surface: #FFFFFF;
+      --primary: #8C2F39;
+      --accent: #2E6E5E;
+      --text: #241C1B;
+      --muted: #75665E;
+      --font-display: "Alegreya", "Times New Roman", Georgia, serif;
+      --font-body: "Barlow", Georgia, "Times New Roman", serif;
+
+      --ink: color-mix(in srgb, var(--text) 76%, transparent);
+      --rule: color-mix(in srgb, var(--text) 22%, transparent);
+      --rule-soft: color-mix(in srgb, var(--text) 11%, transparent);
+      --body-ink: color-mix(in srgb, var(--text) 88%, transparent);
+      --on-primary: color-mix(in srgb, var(--bg) 86%, white);
+      --tint: color-mix(in srgb, var(--primary) 7%, transparent);
+      --gutter: clamp(1.1rem, 2.4vw, 2.2rem);
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      color-scheme: light dark;
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      margin: 0;
+      background-color: var(--bg);
+      color: var(--body-ink);
+      font-family: var(--font-body);
+      font-size: 18px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      overflow-x: hidden;
+    }
+
+    /* paper atmosphere: a soft wash plus a faint diagonal tooth */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      background-image:
+        radial-gradient(120% 70% at 50% -25%, color-mix(in srgb, var(--accent) 13%, transparent), transparent 62%),
+        radial-gradient(90% 60% at 105% 105%, color-mix(in srgb, var(--primary) 9%, transparent), transparent 65%),
+        repeating-linear-gradient(45deg, color-mix(in srgb, var(--text) 3%, transparent) 0 1px, transparent 1px 6px);
+    }
+
+    header, main, footer { position: relative; z-index: 1; }
+
+    a { color: inherit; }
+    img, svg { max-width: 100%; display: block; }
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-display);
+      color: var(--text);
+      font-weight: 600;
+      line-height: 1.04;
+      letter-spacing: -0.02em;
+      margin: 0 0 0.6rem;
+      text-wrap: balance;
+    }
+
+    h1 { font-size: clamp(2.5rem, 5.6vw, 4.25rem); line-height: 0.99; }
+    h2 { font-size: clamp(1.85rem, 3.6vw, 2.9rem); }
+    h3 { font-size: clamp(1.2rem, 2vw, 1.45rem); line-height: 1.15; }
+
+    p { margin: 0 0 1.15rem; text-wrap: pretty; }
+    p:last-child { margin-bottom: 0; }
+
+    ::selection { background: color-mix(in srgb, var(--primary) 26%, transparent); }
+
+    a:focus-visible,
+    button:focus-visible,
+    summary:focus-visible,
+    input:focus-visible,
+    textarea:focus-visible {
+      outline: 2px solid var(--primary);
+      outline-offset: 3px;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: 0;
+      background: var(--primary);
+      color: var(--on-primary);
+      padding: 0.75rem 1.25rem;
+      z-index: 60;
+      font-size: 0.8rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+    .skip-link:focus { left: 0; }
+
+    /* ---------- layout primitives ---------- */
+
+    .wrap {
+      width: min(1260px, 100% - clamp(2rem, 7vw, 7rem));
+      margin-inline: auto;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      column-gap: var(--gutter);
+    }
+
+    [class^="col-"], [class*=" col-"] { grid-column: 1 / -1; }
+
+    @media (min-width: 900px) {
+      .col-rail { grid-column: 1 / 2; }
+      .col-cover { grid-column: 2 / 9; }
+      .col-issue { grid-column: 9 / 13; }
+      .col-main { grid-column: 2 / 9; }
+      .col-side { grid-column: 9 / 13; }
+      .col-a { grid-column: 1 / 7; }
+      .col-b { grid-column: 7 / 13; }
+      .col-num { grid-column: 1 / 2; }
+      .col-head { grid-column: 2 / 10; }
+      .col-body { grid-column: 2 / 10; }
+      .col-wide { grid-column: 2 / 13; }
+    }
+
+    section.leaf { padding: clamp(3rem, 7vw, 6rem) 0; }
+    section.leaf + section.leaf { border-top: 1px solid var(--rule-soft); }
+    .leaf-open { padding-top: clamp(2.2rem, 4.5vw, 3.4rem); }
+
+    /* ---------- editorial furniture ---------- */
+
+    .kicker {
+      font-family: var(--font-body);
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin: 0 0 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+    }
+
+    .kicker::before {
+      content: "";
+      width: 1.6rem;
+      height: 1px;
+      background: var(--primary);
+      flex: none;
+    }
+
+    .kicker-invert { color: var(--on-primary); }
+    .kicker-invert::before { background: var(--on-primary); }
+
+    .numeral {
+      display: block;
+      font-family: var(--font-display);
+      font-size: clamp(2.6rem, 6vw, 4.6rem);
+      line-height: 0.8;
+      font-weight: 700;
+      letter-spacing: -0.04em;
+      color: color-mix(in srgb, var(--text) 22%, transparent);
+    }
+
+    @supports (-webkit-text-stroke: 1px currentColor) {
+      .numeral {
+        color: transparent;
+        -webkit-text-stroke: 1px color-mix(in srgb, var(--text) 42%, transparent);
+      }
+    }
+
+    .sec-head { margin-bottom: clamp(1.8rem, 3.5vw, 2.8rem); }
+    .sec-head .numeral { margin-bottom: 0.9rem; }
+    .sec-note { color: var(--muted); max-width: 54ch; font-size: 1.02rem; margin-top: 0.9rem; }
+    .sec-note a { color: var(--primary); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+
+    .standfirst {
+      font-size: clamp(1.1rem, 1.65vw, 1.32rem);
+      line-height: 1.55;
+      color: color-mix(in srgb, var(--text) 80%, transparent);
+      max-width: 48ch;
+    }
+
+    /* flow-root keeps the floated cap inside its own paragraph box, so it
+       never pushes the following block down by a phantom amount */
+    .dropcap { display: flow-root; }
+
+    .dropcap::first-letter {
+      float: left;
+      font-family: var(--font-display);
+      font-size: 4.1em;
+      line-height: 0.78;
+      font-weight: 600;
+      padding: 0.05em 0.12em 0 0;
+      color: var(--primary);
+    }
+
+    .rule-heavy { border-top: 2px solid var(--ink); }
+    .rule-double { border-top: 3px double var(--rule); }
+    .rule-hair { border-top: 1px solid var(--rule); }
+
+    .tagline-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.4rem;
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .tagline-tags li { display: flex; align-items: center; gap: 1.4rem; }
+    .tagline-tags li + li::before { content: ""; }
+
+    .prose { max-width: 66ch; }
+    .prose p { font-size: 1.04rem; }
+    .prose h3 { margin-top: 2.4rem; }
+
+    .columns {
+      column-count: 2;
+      column-gap: clamp(1.8rem, 4vw, 3.4rem);
+      column-rule: 1px solid var(--rule-soft);
+      font-size: 1.02rem;
+    }
+    .columns p { break-inside: avoid-column; }
+    @media (max-width: 780px) { .columns { column-count: 1; } }
+
+    .footnote {
+      margin-top: 1.6rem;
+      font-size: 0.78rem;
+      line-height: 1.55;
+      color: var(--muted);
+      max-width: 74ch;
+      border-top: 1px solid var(--rule-soft);
+      padding-top: 0.9rem;
+    }
+    .footnote a { color: var(--primary); }
+
+    /* ---------- buttons ---------- */
+
+    .btn {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      isolation: isolate;
+      border: 1px solid var(--ink);
+      background: transparent;
+      color: var(--text);
+      font-family: var(--font-body);
+      font-size: 0.74rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 1.05rem 1.75rem;
+      cursor: pointer;
+      overflow: hidden;
+      transition: color 0.35s ease, border-color 0.35s ease;
+    }
+
+    .btn > span { position: relative; z-index: 1; }
+
+    .btn::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      background: var(--primary);
+      transform: scaleY(0);
+      transform-origin: bottom center;
+      transition: transform 0.42s cubic-bezier(0.2, 0.75, 0.2, 1);
+    }
+
+    .btn:hover, .btn:focus-visible { color: var(--on-primary); border-color: var(--primary); }
+    .btn:hover::before, .btn:focus-visible::before { transform: scaleY(1); }
+
+    .btn-solid { background: var(--primary); border-color: var(--primary); color: var(--on-primary); }
+    .btn-solid::before { background: var(--bg); }
+    .btn-solid:hover, .btn-solid:focus-visible { color: var(--text); }
+
+    .btn-invert { border-color: var(--on-primary); color: var(--on-primary); }
+    .btn-invert::before { background: var(--on-primary); }
+    .btn-invert:hover, .btn-invert:focus-visible { color: var(--primary); border-color: var(--on-primary); }
+
+    .textlink {
+      display: inline-block;
+      font-size: 0.76rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--primary);
+      padding-bottom: 0.25rem;
+      background-image: linear-gradient(var(--primary), var(--primary));
+      background-size: 100% 1px;
+      background-position: 0 100%;
+      background-repeat: no-repeat;
+      transition: background-size 0.4s cubic-bezier(0.2, 0.75, 0.2, 1);
+    }
+    .textlink:hover, .textlink:focus-visible { background-size: 0% 1px; }
+
+    /* ---------- masthead ---------- */
+
+    .masthead {
+      background: var(--surface);
+      border-bottom: 3px double var(--ink);
+    }
+
+    .masthead-rail {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      padding: 0.6rem 0;
+      border-bottom: 1px solid var(--rule-soft);
+      font-size: 0.66rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .masthead-rail a { color: var(--primary); text-decoration: none; }
+    .masthead-rail a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+    .wordmark {
+      display: flex;
+      align-items: center;
+      gap: clamp(0.9rem, 2.4vw, 2rem);
+      padding: clamp(1.4rem, 3.6vw, 2.6rem) 0 clamp(0.7rem, 1.6vw, 1rem);
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .wordmark::before, .wordmark::after {
+      content: "";
+      flex: 1;
+      height: 0;
+      border-top: 1px solid var(--rule);
+    }
+
+    .wordmark-text {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: clamp(1.75rem, 5vw, 3.4rem);
+      line-height: 1;
+      letter-spacing: 0.005em;
+      text-align: center;
+      color: var(--text);
+      text-wrap: balance;
+      overflow-wrap: break-word;
+    }
+
+    .masthead-sectors {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.4rem 1.15rem;
+      margin: 0 0 clamp(0.9rem, 2vw, 1.3rem);
+      padding: 0;
+      list-style: none;
+      font-size: 0.64rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .masthead-sectors li + li::before {
+      content: "\2022";
+      margin-right: 1.15rem;
+      color: var(--primary);
+    }
+
+    .masthead-nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.55rem clamp(0.8rem, 2.4vw, 2.2rem);
+      padding: 0.85rem 0 0.95rem;
+      border-top: 1px solid var(--rule);
+    }
+
+    .nav-link {
+      font-size: 0.71rem;
+      font-weight: 600;
+      letter-spacing: 0.19em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--muted);
+      padding-bottom: 0.2rem;
+      background-image: linear-gradient(var(--primary), var(--primary));
+      background-size: 0% 1px;
+      background-position: 0 100%;
+      background-repeat: no-repeat;
+      transition: color 0.3s ease, background-size 0.4s cubic-bezier(0.2, 0.75, 0.2, 1);
+    }
+
+    .nav-link:hover, .nav-link:focus-visible { color: var(--text); background-size: 100% 1px; }
+
+    /* ---------- cover ---------- */
+
+    .cover { padding: clamp(2.4rem, 6vw, 4.6rem) 0 clamp(2.4rem, 5vw, 3.6rem); }
+
+    /* the vertical rail must size to its own text — a percentage height
+       here stretches the whole cover row and opens a dead band below it */
+    .rail-text {
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      font-size: 0.66rem;
+      letter-spacing: 0.34em;
+      text-transform: uppercase;
+      color: var(--muted);
+      border-left: 1px solid var(--rule);
+      padding-left: 0.9rem;
+      margin: 0.4rem 0 0;
+    }
+
+    .col-rail { align-self: start; }
+
+    @media (max-width: 899px) { .col-rail { display: none; } }
+
+    .cover-h1 { margin-bottom: 1.6rem; }
+    .cover-h1 .line { display: block; overflow: hidden; }
+    .cover-h1 .line > span { display: block; }
+    /* the staggered second line is a desktop-only flourish — on a narrow
+       column it just looks like a broken indent */
+    @media (min-width: 900px) {
+      .cover-h1 .line:nth-child(2) { padding-left: clamp(1rem, 4vw, 3.5rem); }
+    }
+    .cover-h1 .line:last-child { color: var(--primary); }
+
+    .cover-filed {
+      margin-top: 2.2rem;
+      padding-top: 1.1rem;
+      border-top: 1px solid var(--rule);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.5rem;
+      align-items: baseline;
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .cover-filed b { color: var(--primary); font-weight: 600; }
+
+    .cover-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem 1.6rem;
+      align-items: center;
+      margin-top: 2.2rem;
+    }
+
+    .issue-box {
+      border-top: 2px solid var(--ink);
+      padding-top: 1rem;
+      margin-top: clamp(2rem, 4vw, 0.5rem);
+    }
+
+    .issue-box h2 {
+      font-size: 0.72rem;
+      font-family: var(--font-body);
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.9rem;
+      font-weight: 600;
+    }
+
+    .issue-list { list-style: none; margin: 0; padding: 0; }
+
+    .issue-list a {
+      display: grid;
+      grid-template-columns: 2.4rem minmax(0, 1fr) auto;
+      align-items: baseline;
+      gap: 0.75rem;
+      padding: 0.7rem 0;
+      border-bottom: 1px solid var(--rule-soft);
+      text-decoration: none;
+      color: var(--text);
+      font-family: var(--font-display);
+      font-size: 1.06rem;
+      transition: color 0.25s ease;
+    }
+
+    .issue-list a:hover { color: var(--primary); }
+    .issue-list .issue-num { font-family: var(--font-body); font-size: 0.68rem; letter-spacing: 0.16em; color: var(--muted); }
+    .issue-list .issue-count { font-family: var(--font-body); font-size: 0.68rem; letter-spacing: 0.16em; color: var(--muted); }
+
+    .issue-imprint {
+      margin-top: 1.4rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--rule);
+      font-size: 0.72rem;
+      line-height: 1.75;
+      letter-spacing: 0.04em;
+      color: var(--muted);
+    }
+    .issue-imprint a { color: var(--primary); text-decoration: none; }
+    .issue-imprint a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+    /* ---------- ruled index ---------- */
+
+    .index { border-top: 2px solid var(--ink); }
+
+    .index-row {
+      position: relative;
+      display: grid;
+      grid-template-columns: 4.2rem minmax(0, 1.05fr) minmax(0, 1.35fr) 2.4rem;
+      gap: 0.35rem 1.5rem;
+      align-items: baseline;
+      padding: clamp(1.15rem, 2.2vw, 1.7rem) 0;
+      border-bottom: 1px solid var(--rule);
+      text-decoration: none;
+      color: inherit;
+    }
+
+    @media (max-width: 780px) {
+      .index-row { grid-template-columns: 3rem minmax(0, 1fr); }
+      .index-row .index-go { display: none; }
+      .index-row .index-sum { grid-column: 2; }
+    }
+
+    .index-row::before {
+      content: "";
+      position: absolute;
+      inset: 0 calc(-1 * clamp(0.6rem, 1.5vw, 1.2rem));
+      background: var(--tint);
+      opacity: 0;
+      transition: opacity 0.35s ease;
+    }
+
+    .index-row > * { position: relative; transition: transform 0.42s cubic-bezier(0.2, 0.75, 0.2, 1); }
+    .index-row:hover > *, .index-row:focus-visible > * { transform: translateX(0.55rem); }
+    .index-row:hover::before, .index-row:focus-visible::before { opacity: 1; }
+
+    .index-num {
+      font-family: var(--font-body);
+      font-size: 0.7rem;
+      letter-spacing: 0.16em;
+      color: var(--muted);
+      transition: color 0.3s ease;
+    }
+    .index-row:hover .index-num { color: var(--primary); }
+
+    .index-title { font-family: var(--font-display); font-size: clamp(1.25rem, 2.2vw, 1.72rem); line-height: 1.1; color: var(--text); }
+    .index-sum { color: var(--muted); font-size: 0.95rem; line-height: 1.55; }
+    .index-go { justify-self: end; color: var(--primary); font-size: 1rem; opacity: 0.35; transition: opacity 0.3s ease; }
+    .index-row:hover .index-go { opacity: 1; }
+
+    /* ---------- ledger (metrics) ---------- */
+
+    .ledger { margin: 0; border-top: 2px solid var(--ink); }
+
+    .ledger-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 0.4rem 1.5rem;
+      align-items: baseline;
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .ledger-metric {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .ledger-value { margin: 0; text-align: right; }
+
+    .ledger-qual {
+      font-size: 0.66rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-right: 0.5rem;
+    }
+
+    .ledger-figure {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: clamp(1.45rem, 3vw, 2.15rem);
+      letter-spacing: -0.02em;
+      color: var(--primary);
+    }
+
+    .ledger-star { color: var(--muted); text-decoration: none; font-size: 0.8rem; vertical-align: super; }
+    .ledger-star:hover { color: var(--primary); }
+
+    .ledger-note {
+      display: block;
+      font-size: 0.68rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    /* ---------- broadside quote ---------- */
+
+    .broadside {
+      margin: clamp(2.4rem, 5vw, 3.6rem) 0 0;
+      padding-top: 1.4rem;
+      border-top: 2px solid var(--ink);
+      max-width: 30ch;
+    }
+
+    .broadside-mark {
+      display: block;
+      font-family: var(--font-display);
+      font-size: clamp(3.4rem, 7vw, 5rem);
+      line-height: 0.6;
+      color: color-mix(in srgb, var(--primary) 45%, transparent);
+      margin-bottom: 0.35rem;
+    }
+
+    .broadside p {
+      font-family: var(--font-display);
+      font-size: clamp(1.5rem, 3vw, 2.15rem);
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      margin-bottom: 1.2rem;
+    }
+
+    .broadside cite {
+      font-style: normal;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted);
+      display: block;
+      border-top: 1px solid var(--rule);
+      padding-top: 0.8rem;
+    }
+
+    .broadside cite b { color: var(--primary); font-weight: 600; }
+
+    /* margin-set pull quote: rides alongside the article column */
+    .broadside-margin { max-width: none; }
+    @media (min-width: 900px) {
+      .broadside-margin { margin-top: 1.6rem; position: sticky; top: 2.5rem; }
+    }
+
+    /* ---------- spreads (case studies / process) ---------- */
+
+    .spread {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 0.6rem var(--gutter);
+      padding: clamp(1.8rem, 3.4vw, 2.8rem) 0;
+      border-bottom: 1px solid var(--rule);
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .spread:first-of-type { border-top: 2px solid var(--ink); }
+
+    @media (min-width: 900px) {
+      .spread { grid-template-columns: 5.5rem minmax(0, 0.85fr) minmax(0, 1.15fr); align-items: start; }
+    }
+
+    .spread-label {
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .spread h3 { font-size: clamp(1.5rem, 3vw, 2.15rem); }
+    .spread p { color: var(--muted); font-size: 0.98rem; }
+    a.spread:hover h3 { color: var(--primary); }
+    a.spread .spread-go { display: inline-block; margin-top: 0.9rem; }
+
+    .spread .numeral { font-size: clamp(2.2rem, 4vw, 3.4rem); }
+
+    /* ---------- masthead / people ---------- */
+
+    .people { border-top: 2px solid var(--ink); }
+
+    .person {
+      display: grid;
+      grid-template-columns: 4.6rem minmax(0, 1fr);
+      gap: 1rem clamp(1.2rem, 3vw, 2.4rem);
+      padding: clamp(1.4rem, 2.6vw, 2.1rem) 0;
+      border-bottom: 1px solid var(--rule);
+      align-items: start;
+    }
+
+    @media (min-width: 900px) {
+      .person { grid-template-columns: 4.6rem minmax(0, 0.7fr) minmax(0, 1.3fr); }
+    }
+
+    .monogram {
+      width: 4.6rem;
+      height: 4.6rem;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--ink);
+      background: color-mix(in srgb, var(--primary) 8%, var(--surface));
+      color: var(--primary);
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      transition: background 0.35s ease, color 0.35s ease;
+    }
+
+    .person:hover .monogram { background: var(--primary); color: var(--on-primary); }
+
+    .person h3 { margin-bottom: 0.3rem; }
+    .person-role { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); margin: 0; }
+    .person-bio { color: var(--muted); font-size: 0.98rem; margin: 0; }
+
+    /* ---------- rates ---------- */
+
+    .rates { border-top: 2px solid var(--ink); display: grid; grid-template-columns: minmax(0, 1fr); }
+    @media (min-width: 860px) { .rates { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+
+    .rate {
+      display: flex;
+      flex-direction: column;
+      padding: clamp(1.6rem, 3vw, 2.4rem) 0;
+      border-bottom: 1px solid var(--rule);
+      transition: background 0.35s ease;
+    }
+
+    .rate .btn { margin-top: auto; align-self: flex-start; }
+
+    @media (min-width: 860px) {
+      .rate { padding: clamp(1.6rem, 3vw, 2.4rem) clamp(1rem, 2vw, 1.8rem); border-right: 1px solid var(--rule); }
+      .rate:first-child { padding-left: 0; }
+      .rate:last-child { border-right: none; padding-right: 0; }
+    }
+
+    .rate:hover { background: var(--tint); }
+    .rate-tier { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--primary); margin-bottom: 0.6rem; }
+    .rate-price { font-family: var(--font-display); font-size: clamp(2rem, 3.6vw, 2.7rem); line-height: 1; letter-spacing: -0.02em; color: var(--text); margin-bottom: 0.9rem; }
+    .rate-blurb { color: var(--muted); font-size: 0.95rem; padding-bottom: 1.1rem; border-bottom: 1px solid var(--rule-soft); }
+    .rate-features { list-style: none; margin: 1.1rem 0 1.6rem; padding: 0; display: grid; gap: 0.7rem; font-size: 0.94rem; }
+    .rate-features li { position: relative; padding-left: 1.4rem; color: var(--muted); }
+    .rate-features li::before { content: "\2014"; position: absolute; left: 0; color: var(--primary); }
+
+    /* ---------- questions ---------- */
+
+    .qa-list { border-top: 2px solid var(--ink); max-width: 78ch; }
+
+    .qa { border-bottom: 1px solid var(--rule); }
+
+    .qa summary {
+      display: grid;
+      grid-template-columns: 3.2rem minmax(0, 1fr) 1.6rem;
+      gap: 1rem;
+      align-items: baseline;
+      padding: 1.25rem 0;
+      cursor: pointer;
+      list-style: none;
+      font-family: var(--font-display);
+      font-size: clamp(1.08rem, 1.9vw, 1.32rem);
+      line-height: 1.25;
+      color: var(--text);
+      transition: color 0.25s ease;
+    }
+
+    .qa summary::-webkit-details-marker { display: none; }
+    .qa summary:hover { color: var(--primary); }
+
+    .qa-num { font-family: var(--font-body); font-size: 0.68rem; letter-spacing: 0.16em; color: var(--muted); }
+    .qa-sign { justify-self: end; color: var(--primary); font-family: var(--font-body); font-size: 1.1rem; line-height: 1; transition: transform 0.35s cubic-bezier(0.2, 0.75, 0.2, 1); }
+    .qa[open] .qa-sign { transform: rotate(45deg); }
+
+    .qa-answer { margin: 0 0 1.5rem 4.2rem; max-width: 62ch; color: var(--muted); font-size: 0.99rem; }
+    @media (max-width: 780px) { .qa-answer { margin-left: 0; } .qa summary { grid-template-columns: 2.4rem minmax(0, 1fr) 1.4rem; } }
+    .qa[open] .qa-answer { animation: rise 0.45s ease both; }
+
+    /* ---------- correspondence band ---------- */
+
+    .band {
+      background: var(--primary);
+      color: var(--on-primary);
+      margin-top: clamp(3rem, 6vw, 5rem);
+    }
+
+    /* a section already carries its own bottom padding — don't stack a
+       second gap on top of it before the band */
+    .leaf + .band { margin-top: 0; }
+
+    .band-inner {
+      display: grid;
+      gap: clamp(1.6rem, 4vw, 3rem);
+      padding: clamp(2.6rem, 6vw, 4.4rem) 0;
+      align-items: end;
+    }
+
+    @media (min-width: 900px) { .band-inner { grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.65fr); } }
+
+    .band h2 { color: var(--on-primary); font-size: clamp(1.9rem, 4.2vw, 3rem); max-width: 18ch; }
+    .band-note { color: color-mix(in srgb, var(--on-primary) 80%, transparent); max-width: 44ch; margin: 0.8rem 0 0; }
+    .band-actions { display: flex; flex-direction: column; align-items: flex-start; gap: 1.1rem; }
+
+    .band-mail {
+      font-size: 0.74rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--on-primary);
+      text-decoration: none;
+      border-bottom: 1px solid color-mix(in srgb, var(--on-primary) 45%, transparent);
+      padding-bottom: 0.2rem;
+      word-break: break-all;
+    }
+    .band-mail:hover { border-bottom-color: var(--on-primary); }
+
+    /* ---------- form ---------- */
+
+    .dispatch-form { margin-top: 1.6rem; max-width: 44rem; }
+
+    .field { display: grid; gap: 0.45rem; margin-bottom: 1.6rem; }
+
+    .field label {
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .field input, .field textarea {
+      font-family: var(--font-body);
+      font-size: 1rem;
+      color: var(--text);
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid var(--ink);
+      padding: 0.65rem 0;
+      border-radius: 0;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+      width: 100%;
+    }
+
+    .field textarea { resize: vertical; min-height: 8rem; line-height: 1.6; }
+
+    .field input:focus, .field textarea:focus {
+      outline: none;
+      border-bottom-color: var(--primary);
+      box-shadow: 0 1px 0 0 var(--primary);
+    }
+
+    .field input::placeholder, .field textarea::placeholder { color: color-mix(in srgb, var(--muted) 70%, transparent); }
+
+    .form-note { font-size: 0.84rem; color: var(--muted); max-width: 62ch; margin-top: 1.3rem; }
+    .form-note a { color: var(--primary); }
+
+    /* ---------- directory (contact) ---------- */
+
+    .directory { border-top: 2px solid var(--ink); }
+
+    .directory-row { padding: 1.05rem 0; border-bottom: 1px solid var(--rule); }
+    .directory-label { font-size: 0.66rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.3rem; }
+    .directory-value { font-family: var(--font-display); font-size: 1.1rem; line-height: 1.35; color: var(--text); }
+    .directory-value a { color: var(--primary); text-decoration: none; border-bottom: 1px solid color-mix(in srgb, var(--primary) 40%, transparent); }
+    .directory-value a:hover { border-bottom-color: var(--primary); }
+    .directory-value small { display: block; font-family: var(--font-body); font-size: 0.85rem; color: var(--muted); margin-top: 0.25rem; }
+
+    /* ---------- legal ---------- */
+
+    .legal-body { max-width: 70ch; }
+    .legal-section { padding-top: 2.2rem; }
+    .legal-section h2 {
+      font-size: clamp(1.15rem, 2vw, 1.45rem);
+      display: grid;
+      grid-template-columns: 3rem minmax(0, 1fr);
+      gap: 0.8rem;
+      align-items: baseline;
+      border-top: 1px solid var(--rule);
+      padding-top: 1rem;
+    }
+    .legal-section h2 span { font-family: var(--font-body); font-size: 0.68rem; letter-spacing: 0.16em; color: var(--primary); }
+    .legal-section p { font-size: 0.99rem; }
+
+    .entity-box {
+      margin-top: 2.6rem;
+      border: 1px solid var(--ink);
+      padding: clamp(1.3rem, 3vw, 2rem);
+      background: color-mix(in srgb, var(--surface) 65%, transparent);
+    }
+    .entity-box h3 { font-size: 0.7rem; font-family: var(--font-body); letter-spacing: 0.22em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.9rem; }
+    .entity-box p { font-size: 0.95rem; margin-bottom: 0.35rem; }
+    .entity-box strong { color: var(--text); }
+    .entity-box a { color: var(--primary); }
+
+    /* ---------- colophon (footer) ---------- */
+
+    .colophon {
+      background: var(--surface);
+      border-top: 3px double var(--ink);
+      margin-top: clamp(3rem, 6vw, 5rem);
+    }
+
+    /* the band and the colophon are in different roots (main / footer),
+       so close the gap when a page ends on a band */
+    main:has(> .band:last-child) + .colophon { margin-top: 0; }
+
+    .colophon-top {
+      display: grid;
+      gap: clamp(1.8rem, 4vw, 3rem);
+      padding: clamp(2.4rem, 5vw, 3.6rem) 0 clamp(1.6rem, 3vw, 2.4rem);
+    }
+
+    @media (min-width: 900px) {
+      .colophon-top { grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr) minmax(0, 1fr); }
+    }
+
+    .colophon-mark { font-family: var(--font-display); font-size: clamp(1.5rem, 3vw, 2.1rem); color: var(--text); text-decoration: none; display: inline-block; margin-bottom: 0.8rem; }
+    .colophon-tagline { color: var(--muted); font-size: 0.95rem; max-width: 34ch; }
+
+    .colophon h4 { font-family: var(--font-body); font-size: 0.66rem; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--muted); margin-bottom: 1rem; }
+    .colophon ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.55rem; }
+    .colophon ul a { font-size: 0.9rem; text-decoration: none; color: var(--text); }
+    .colophon ul a:hover { color: var(--primary); }
+
+    .publisher { border-top: 1px solid var(--rule); padding: 1.6rem 0 0; }
+    .publisher-name { font-family: var(--font-display); font-size: 1.05rem; color: var(--text); margin-bottom: 0.3rem; }
+    .publisher p { font-size: 0.86rem; color: var(--muted); margin-bottom: 0.3rem; }
+    .publisher a { color: var(--primary); text-decoration: none; }
+    .publisher a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+    .disclaimer-box {
+      margin-top: 1.6rem;
+      border: 1px solid var(--rule);
+      padding: 1.1rem 1.3rem;
+      font-size: 0.8rem;
+      line-height: 1.6;
+      color: var(--muted);
+      max-width: 92ch;
+    }
+    .disclaimer-box strong { color: var(--text); letter-spacing: 0.14em; text-transform: uppercase; font-size: 0.68rem; display: block; margin-bottom: 0.4rem; }
+    .disclaimer-box a { color: var(--primary); }
+
+    .colophon-base {
+      border-top: 1px solid var(--rule-soft);
+      margin-top: 1.6rem;
+      padding: 1.1rem 0 2.2rem;
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.5rem;
+      justify-content: space-between;
+    }
+
+    /* ---------- motion ---------- */
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(14px); }
+      to { opacity: 1; transform: none; }
+    }
+
+    @keyframes lineUp {
+      from { opacity: 0; transform: translateY(105%); }
+      to { opacity: 1; transform: none; }
+    }
+
+    /*
+     * Scroll-linked reveals never fade fully out: content below the fold
+     * must stay readable in a static capture (print, crawler, manual ad
+     * review screenshot), so the start state is a soft lift, not a blank.
+     */
+    @keyframes lift {
+      from { opacity: 0.62; transform: translateY(20px); }
+      to { opacity: 1; transform: none; }
+    }
+
+    .reveal { animation: rise 0.85s cubic-bezier(0.16, 0.84, 0.44, 1) both; animation-delay: calc(var(--d, 0) * 70ms); }
+    .cover-h1 .line > span { animation: lineUp 1s cubic-bezier(0.16, 0.84, 0.44, 1) both; animation-delay: calc(var(--d, 0) * 110ms); }
+
+    @supports (animation-timeline: view()) {
+      @media (prefers-reduced-motion: no-preference) {
+        .scroll-reveal {
+          animation: lift linear both;
+          animation-timeline: view();
+          animation-range: entry 2% cover 24%;
+        }
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .reveal, .cover-h1 .line > span, .qa[open] .qa-answer, .scroll-reveal { animation: none !important; opacity: 1 !important; transform: none !important; }
+      * { transition-duration: 0.01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="masthead">
+    <div class="wrap">
+      <div class="masthead-rail">
+        <span>We measure what closes, not just what clicks.</span>
+        <span>Enquiries &mdash; <a href="mailto:agency@bonniejchristensen-marketing.com">agency@bonniejchristensen-marketing.com</a></span>
+      </div>
+      <a class="wordmark" href="/">
+        <span class="wordmark-text">Lucent Growth Studio</span>
+      </a>
+      <ul class="masthead-sectors">
+        <li>Fintech</li>
+        <li>B2B SaaS</li>
+        <li>Financial Services</li>
+        <li>Hospitality &amp; Travel</li>
+      </ul>
+      <nav class="masthead-nav" aria-label="Primary">
+        <a class="nav-link" href="/services/">Services</a>
+          <a class="nav-link" href="/case-studies/">Case Studies</a>
+          <a class="nav-link" href="/process/">Process</a>
+          <a class="nav-link" href="/pricing/">Rates</a>
+          <a class="nav-link" href="/about/">About</a>
+          <a class="nav-link" href="/team/">Masthead</a>
+          <a class="nav-link" href="/blog/">Journal</a>
+          <a class="nav-link" href="/faq/">Questions</a>
+          <a class="nav-link" href="/contact/">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="leaf leaf-open">
+      <div class="wrap grid">
+        <div class="col-num"><span class="numeral" aria-hidden="true">07</span></div>
+        <div class="col-cover">
+          <p class="kicker">Service</p>
+          <h1>Search Engine Optimization</h1>
+          <p class="standfirst" style="margin-top:1.2rem;">Technical fixes and topical authority that move rankings that actually convert. Run in-house by Lucent Growth Studio, not outsourced.</p>
+        </div>
+        <aside class="col-issue">
+          <div class="issue-box">
+            <h2>In this service</h2>
+            <ul class="rate-features" style="margin-top:0;">
+              <li>Full technical SEO audit</li>
+              <li>Keyword and topic cluster map</li>
+              <li>Monthly content briefs and editorial calendar</li>
+              <li>On-page and internal linking fixes</li>
+              <li>Monthly ranking and traffic reporting</li>
+            </ul>
+            <p class="issue-imprint">Delivered by the named team on our <a href="/team/">masthead</a>. Scope and reporting cadence are agreed in writing before any work starts.</p>
+            <a class="btn" href="/contact/"><span>Scope this service</span></a>
+          </div>
+        </aside>
+      </div>
+
+      <div class="wrap grid" style="margin-top:clamp(2.2rem,4.5vw,3.4rem);">
+        <div class="col-body">
+          <div class="prose rule-heavy" style="padding-top:1.6rem;">
+          <p class="dropcap">Search Engine Optimization at Lucent Growth Studio starts with a full audit of what’s currently working and what isn’t — no cookie-cutter checklist, no vanity metrics. We fix technical issues that block crawling and indexing, then build topical authority around terms your actual buyers search.</p>
+          <p>From there we build a plan specific to your business: keyword clusters mapped to buying stages, internal linking that actually supports them, and content briefs written for people who convert — not for search engines.</p>
+          <p>Rankings move because the underlying page and site experience genuinely got better, which is also why the gains tend to hold. We report on the metrics that actually predict revenue, not clicks for their own sake, and we adjust the plan every month based on what the data shows.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap grid" style="margin-top:clamp(2.4rem,5vw,3.6rem);">
+        <div class="col-body">
+          <p class="kicker">Questions</p>
+          <h2 style="margin-bottom:1.4rem;">About Search Engine Optimization</h2>
+          <div class="qa-list">
+            <details class="qa">
+              <summary>
+                <span class="qa-num">01</span>
+                <span>How long until we see results from Search Engine Optimization?</span>
+                <span class="qa-sign" aria-hidden="true">+</span>
+              </summary>
+              <p class="qa-answer">Most Lucent Growth Studio clients see initial movement within 4 to 6 months for competitive terms, sooner for long-tail queries; we’ll give you a realistic timeline specific to your starting point on the first call.</p>
+            </details>
+            <details class="qa">
+              <summary>
+                <span class="qa-num">02</span>
+                <span>Do we need a long-term contract for Search Engine Optimization?</span>
+                <span class="qa-sign" aria-hidden="true">+</span>
+              </summary>
+              <p class="qa-answer">No. Engagements run month-to-month after an initial 60-day onboarding period, and you can pause or cancel with 30 days’ notice.</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="wrap band-inner">
+        <div>
+          <p class="kicker kicker-invert">Correspondence</p>
+          <h2>Talk to us about Search Engine Optimization.</h2>
+          <p class="band-note">We will tell you what it would take, what it would cost, and whether it is the right first move.</p>
+        </div>
+        <div class="band-actions">
+          <a class="btn btn-invert" href="/contact/"><span>Write to the desk</span></a>
+          <a class="band-mail" href="mailto:agency@bonniejchristensen-marketing.com">agency@bonniejchristensen-marketing.com</a>
+        </div>
+      </div>
+    </section>
+</main>
+
+  <footer class="colophon">
+    <div class="wrap">
+      <div class="colophon-top">
+        <div>
+          <a class="colophon-mark" href="/">Lucent Growth Studio</a>
+          <p class="colophon-tagline">We measure what closes, not just what clicks.</p>
+        </div>
+        <div>
+          <h4>Sections</h4>
+          <ul>
+            <li><a href="/services/">Services</a></li>
+            <li><a href="/case-studies/">Case Studies</a></li>
+            <li><a href="/process/">Process</a></li>
+            <li><a href="/pricing/">Rates</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/team/">Masthead</a></li>
+            <li><a href="/blog/">Journal</a></li>
+            <li><a href="/faq/">Questions</a></li>
+            <li><a href="/contact/">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="/privacy/">Privacy Policy</a></li>
+            <li><a href="/terms/">Terms of Service</a></li>
+            <li><a href="/cookies/">Cookie Policy</a></li>
+            <li><a href="/disclaimer/">Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="publisher">
+        <p class="publisher-name">Published by BONNIE J CHRISTENSEN LLC</p>
+        <p>6900 Seville Ave, Huntington Park, CA 90255-4970</p>
+        <p>CA LLC File No. 202253412781</p>
+        <p>
+          <a href="mailto:agency@bonniejchristensen-marketing.com">agency@bonniejchristensen-marketing.com</a>
+          &nbsp;&middot;&nbsp;
+          <a href="tel:+13234182760">+1 (323) 418-2760</a>
+        </p>
+        <div class="disclaimer-box">
+          <strong>Disclaimer</strong>
+          Lucent Growth Studio is an independent marketing services provider. Marketing results depend on many factors outside our control, including market conditions, competitor activity, account history, budget, and the policies of third-party advertising platforms; results shown on this website are specific to the clients described and are not a guarantee of future performance for any other business. Lucent Growth Studio is not affiliated with, endorsed by, or officially connected to Google, Google Ads, Meta, Facebook, Instagram, TikTok, or any other advertising or search platform referenced on this website. All trademarks belong to their respective owners. Any figures shown on this site describe a single named engagement, are not typical, and are not a promise of future results &mdash; see the full <a href="/disclaimer/">disclaimer</a>, <a href="/privacy/">privacy policy</a>, <a href="/terms/">terms of service</a> and <a href="/cookies/">cookie policy</a>.
+        </div>
+      </div>
+      <div class="colophon-base">
+        <span>&copy; 2026 BONNIE J CHRISTENSEN LLC. All rights reserved.</span>
+        <span>Lucent Growth Studio is a trading brand of BONNIE J CHRISTENSEN LLC.</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
